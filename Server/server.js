@@ -3,6 +3,7 @@ import { CardRepo } from "./cardRepo.js";
 import chalk from 'chalk';
 import morgan from 'morgan';
 import Debug from 'debug';
+import path from 'path';
 
 const debug = Debug('CardOps');
 
@@ -12,6 +13,7 @@ const cRepo = new CardRepo(url, dbName, 1);
 const webServer = express();
 
 webServer.use(morgan('combined'));
+webServer.use(express.static(path.join('../Portal/')));
 
 webServer.get('/', (req, res) =>{
     res.send('hello from CardOps')
