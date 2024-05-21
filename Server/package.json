@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
+    "start": "set DEBUG='CardOps' & nodemon server.js",
+    "debug": "set DEBUG=* & nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,11 +14,19 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "debug": "^4.3.4",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongodb": "^6.6.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "portNumber": 2884
+    }
   }
 }

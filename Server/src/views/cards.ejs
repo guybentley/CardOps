@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div>
+            <H1>
+                Cards
+            </H1>
+        </div>
+        <div>
+            <% cards.map((card)=>{%>
+            <DIV style="background-color: lightgrey;">
+                <h3><%=card.cardId%></h3>
+                <p><%=card.summary%></p>
+            </DIV>
+            <% }) %>
+        </div>
+    </body>
+</html>
