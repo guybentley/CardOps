@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: card-pod
+  labels:
+    name: card-pod
+spec:
+  containers:
+  - name: cardapi
+    image: guydbentley/cardops:cardsapi
+    imagePullPolicy: Always
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 2883

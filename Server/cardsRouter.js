@@ -1,7 +1,7 @@
 import express from 'express';
 // import { CardRepo } from "./cardRepo.js";
 import Debug from 'debug';
-import cards from '../TestData/cards.json' with { type: 'json'};
+import cards from './cards.json' with { type: 'json'};
 
 const cardsRouter = express.Router();
 

@@ -6,7 +6,7 @@ import Debug from 'debug';
 import cardsRouter from './cardsRouter.js';
 
 const debug = Debug('CardOps');
-const port = process.env.portNumber;
+const port = 2883;
 
 const url = 'mongodb://cardOpsAccess:IzmQvbcL247m4C87gG7AYGn@localhost:27017/';
 const dbName = 'CardOps';

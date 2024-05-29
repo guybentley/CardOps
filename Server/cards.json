@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6627ad2176f83b9d983080b9"
+  },
+  "cardType": "story",
+  "summary": "As a user I want to list all stories in the backlog",
+  "cardId": 3,
+  "productId": "CardOps"
+},
+{
+  "_id": {
+    "$oid": "6627adcf76f83b9d983080bb"
+  },
+  "cardId": 1,
+  "cardType": "story",
+  "summary": "As a user I want to be able to add a story to the system",
+  "productId": "CardOps"
+},
+{
+  "_id": {
+    "$oid": "6627ae3e76f83b9d983080be"
+  },
+  "cardId": 2,
+  "productId": "CardOps",
+  "cardType": "story",
+  "summary": "As a user I want to be able to read a story from the system"
+}]
