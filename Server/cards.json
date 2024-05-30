@@ -5,6 +5,7 @@
   "cardType": "story",
   "summary": "As a user I want to list all stories in the backlog",
   "cardId": 3,
+  "createdDate": "2024-04-10 12:24:26Z",
   "productId": "CardOps"
 },
 {
@@ -14,6 +15,7 @@
   "cardId": 1,
   "cardType": "story",
   "summary": "As a user I want to be able to add a story to the system",
+  "createdDate": "2024-04-10 12:24:27Z",
   "productId": "CardOps"
 },
 {
@@ -23,5 +25,6 @@
   "cardId": 2,
   "productId": "CardOps",
   "cardType": "story",
+  "createdDate": "2024-04-10 12:24:27Z",
   "summary": "As a user I want to be able to read a story from the system"
 }]
