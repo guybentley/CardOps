@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: card-api-deploy
+  labels:
+   app: card-api-pod
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: card-api-pod
+  template:
+    metadata:
+      labels:
+        app: card-api-pod
+    spec:
+      containers:
+      - name: card-api-pod
+        image: guydbentley/cardops:cardsapi
+        imagePullPolicy: Always
+        resources:
+          limits: 
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 2883
