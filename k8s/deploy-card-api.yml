@@ -9,11 +9,18 @@ spec:
   selector:
     matchLabels:
       app: card-api-pod
+  minReadySeconds: 5
+  strategy:
+    type: RollingUpdate
+    RollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1    
   template:
     metadata:
       labels:
         app: card-api-pod
     spec:
+      terminationGracePeriodSeconds: 2
       containers:
       - name: card-api-pod
         image: guydbentley/cardops:cardsapi
